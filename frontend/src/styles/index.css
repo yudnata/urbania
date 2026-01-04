@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+@theme {
+  --font-urbanist: "Urbanist", sans-serif;
+
+  --color-primary: #1e293b;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #64748b;
+  --color-secondary-light: #94a3b8;
+
+  --color-accent: #10b981;
+  --color-accent-hover: #059669;
+  --color-accent-light: #d1fae5;
+  --color-accent-foreground: #ffffff;
+
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-urbanist);
+    color: var(--color-primary);
+    background-color: var(--color-background);
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-secondary);
+  }
+
+  small {
+    font-size: 14px;
+    color: var(--color-secondary-light);
+  }
+}
