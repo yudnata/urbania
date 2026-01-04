@@ -1,7 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-urbanist: "Urbanist", sans-serif;
+  --font-urbanist: 'Urbanist', sans-serif;
+  --font-sans: 'Urbanist', sans-serif;
 
   --color-primary: #1e293b;
   --color-primary-foreground: #ffffff;
@@ -62,4 +63,13 @@
     font-size: 14px;
     color: var(--color-secondary-light);
   }
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Urbanist', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
